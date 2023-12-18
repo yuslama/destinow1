@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "392283155172",
+    "firebase_url": "https://denow-dd9e6-default-rtdb.firebaseio.com",
+    "project_id": "denow-dd9e6",
+    "storage_bucket": "denow-dd9e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392283155172:android:6c4c245ecfab3fa58ddaf1",
+        "android_client_info": {
+          "package_name": "com.example.destinow1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNbBA_ITvE_CLyAPHYDN_s9PAKPYjXnKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392283155172:android:ce646ac1758d78c38ddaf1",
+        "android_client_info": {
+          "package_name": "com.safari.destinow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNbBA_ITvE_CLyAPHYDN_s9PAKPYjXnKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

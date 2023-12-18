@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="154dp"
+    android:layout_height="153dp"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/lavender_border">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="144dp"
+            android:layout_height="143dp"
+            android:id="@+id/recCard"
+            app:cardCornerRadius="10dp"
+
+
+           >
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="143dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/liburan"
+                android:id="@+id/recImage"/>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                android:text="Curug Cimarinjung"
+                android:textColor="@color/black"
+                android:background="@drawable/bordernyata"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="9dp"
+                android:id="@+id/judulItem"/>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

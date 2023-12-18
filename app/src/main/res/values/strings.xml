@@ -1,0 +1,17 @@
+<resources>
+    <!-- login strings -->
+
+    <string name="app_name">destinow1</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="butuh_bantuan__hubungi_kami_di_layanan_pelanggan_string">Butuh bantuan? Hubungi kami di Layanan Pelanggan</string>
+    <string name="daftar_sekarang_string">Daftar Sekarang</string>
+    <string name="belum_punya_akun__string">Belum punya akun?</string>
+    <string name="masuk_string">Masuk</string>
+    <string name="lupa_password__string">Lupa password?</string>
+    <string name="reset_password_string">Reset Password</string>
+    <string name="masukkan_password_anda_string">Masukkan password Anda</string>
+    <string name="password_string">PASSWORD</string>
+    <string name="masukkan_email_anda_string">Masukkan email Anda</string>
+    <string name="email_string">EMAIL</string>
+    <string name="time_string">9:41</string>
+</resources>
