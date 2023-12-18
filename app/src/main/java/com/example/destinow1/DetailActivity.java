@@ -165,8 +165,7 @@ public class DetailActivity extends AppCompatActivity {
             uploadData(null);
 
 
-        }
-        else {
+        } else {
             StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Data komentar2")
                     .child(uri.getLastPathSegment());
             AlertDialog.Builder builder = new AlertDialog.Builder(DetailActivity.this);
@@ -195,11 +194,11 @@ public class DetailActivity extends AppCompatActivity {
 
     public void uploadData(Uri uri){
         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        String email = currentFirebaseUser.getEmail();
+        String displayName = currentFirebaseUser.getDisplayName();
 
         String namawisata = detailjudul.getText().toString();
         String komentar = edt_komentar.getText().toString();
-        String nama = email;
+        String nama = displayName;
         Datakomentar datakomentar = new Datakomentar(nama, komentar, imageURL);
 
         String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());

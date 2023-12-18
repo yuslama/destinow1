@@ -1,6 +1,9 @@
 package com.example.destinow1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,15 +31,23 @@ public class MainActivityNew extends AppCompatActivity {
     RecyclerView recyclerView;
     List<DataClass> dataList;
     MyAdapter adapter;
-    TextView txtnamaUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         recyclerView = findViewById(R.id.recyclerView);
-        txtnamaUser = findViewById(R.id.namaUser);
 
+        ImageView imageView = findViewById(R.id.profil_pic);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), userDetails.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(MainActivityNew.this, 2);
         recyclerView.setLayoutManager(gridLayoutManager);
@@ -70,6 +81,7 @@ public class MainActivityNew extends AppCompatActivity {
 
         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         String name = currentFirebaseUser.getDisplayName();
+        TextView txtnamaUser = findViewById(R.id.namaUser);
         txtnamaUser.setText(name);
 
     }
